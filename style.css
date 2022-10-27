@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+/* All variable color  */
+
+:root {
+  --fontColor: #57467B;
+  --background: #ec4c76; /* 524948*/
+  --white: #fff;
+  --mega_menu_color: #F7F7F7;
+}
+
+/* 7CB4B8, 70F8BA, CAFE48 *//*# sourceMappingURL=style.css.map */
+
+
+.email_section{
+  padding-left: 8px;
+  padding-top: 5px;
+  color: var(--white);
+}
+.email_section a{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--white)
+}
+/* Header top bar */
+.header_topBar{
+  height: 40px;
+  background-color: var(--background);
+  overflow: hidden;
+}
+.header_topBar > div{
+  align-items: center;
+}
+
+.social_section ul{
+  list-style: none;
+  display: flex;
+  gap: .7rem;
+  font-size: 18px;
+  align-items: center;
+  justify-content: end;
+  padding: 4px 0;
+}
+.social_section ul li a{
+  color: var(--white)
+}
+
+/* nav section */
+.header_navbar{
+  border-bottom: 2px solid #ddd;
+}
+.header_nav{
+  width: 100%;
+  display: grid;
+  justify-content: end;
+  grid-template-columns: auto 80px;
+  font-weight: bold;
+  padding-top: .7rem;
+}
+.header_nav ul{
+  list-style: none;
+  display: flex;
+  gap: 1.3rem;
+}
+.header_nav ul li a{
+  color: var(--fontColor);
+  font-size: 18px;
+}
+.mega_menu_btn {
+  text-align: right;
+  cursor: pointer;
+}
+.mega_menu_btn > span > a{
+  color: var(--fontColor);
+}
+.header_logo .logo{
+  padding: .5rem 0;
+}
+
+/* MegaMenu Section */
+.mega_menu_section{
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: var(--mega_menu_color);
+  padding: 1rem 0 1rem .5rem;
+  border: 1px solid #ddd;
+  border-top: none;
+  box-shadow: 0 2px 5px #ddd;
+  animation-name: mega;
+  animation-duration: 1s;
+  margin-top: 0px;
+  border-radius: 0px 0px 8px 8px;
+}
+.mega_alignment{
+  position: absolute;
+  z-index: 99999999;
+  top: auto;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation-name: mega-top-animation;
+  animation-duration: 1s;
+  display: grid;
+}
+/*
+#megaMenuSection{
+}
+*/
+.mega_menu_item{
+  width: 100%;
+}
+.mega_menu_item a{
+  display: block;
+  color: var(--fontColor);
+  font-size: 18px;
+  font-weight: 500;
+}
+.mega_menu_item a:hover{
+  text-decoration: underline;
+}
+@keyframes mega {
+  0%{
+    opacity: 0;
+    margin-top: -200px;
+  }
+  50%{
+    opacity: 0.5;
+    margin-top: -100px;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+
+/* Quiz Category Card */
+.category-container{
+  width: 50%;
+  margin: 0 auto;
+}
+.category_card {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 1px 11px #ddd;
+  padding: 16px;
+  padding-right: 0px;
+}
+.category-container h1{
+  text-align: left;
+  margin-top: 1.5rem;
+}
+footer{
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--background);
+}
+footer p{
+  padding-top: 15px;
+}
+
+/* Contact Form */
+.btn-contact , .zihad-btn{
+  background-color: var(--background);
+  color: var(--white);
+}
